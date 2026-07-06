@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sendrealm Email"
+  short_description: "Build Sendrealm email integrations"
+  default_prompt: "Use $sendrealm-email to add a transactional email integration with Sendrealm."

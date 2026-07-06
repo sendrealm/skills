@@ -1,0 +1,21 @@
+{
+  "name": "sendrealm",
+  "displayName": "Sendrealm",
+  "description": "Portable skills for Sendrealm email and push notification integrations.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Sendrealm",
+    "url": "https://sendrealm.com"
+  },
+  "homepage": "https://sendrealm.com",
+  "repository": "https://github.com/sendrealm/skills",
+  "license": "MIT",
+  "keywords": [
+    "sendrealm",
+    "email",
+    "push",
+    "notifications",
+    "agent-skills"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sendrealm Push"
+  short_description: "Build Sendrealm push integrations"
+  default_prompt: "Use $sendrealm-push to add Sendrealm push registration and backend notification sending."
