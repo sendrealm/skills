@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sendrealm Dashboard"
+  short_description: "Manage safe Sendrealm dashboard workflows"
+  default_prompt: "Use $sendrealm-dashboard to manage Sendrealm dashboard resources through MCP."
