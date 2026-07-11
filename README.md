@@ -12,7 +12,7 @@ npx skills add sendrealm/skills
 
 - `sendrealm-email`: server-side email sends, templates, domains, API keys, attachments, tags, headers, and testing patterns.
 - `sendrealm-push`: push setup for Web, React Native, iOS, and Android, including device registration, backend sends, provider configuration, and delivery diagnostics.
-- `sendrealm-dashboard`: API-key-scoped project, domain, audience, contact lookup/upsert, template, correlated automation, sandbox test-run, event, and campaign-draft workflows through the Sendrealm MCP server.
+- `sendrealm-dashboard`: API-key-scoped project, domain, audience, contact, template, automation, campaign-draft, push app/device diagnostics, and single-device push test workflows through the Sendrealm MCP server.
 
 ## Package Layout
 
@@ -31,7 +31,7 @@ skills/
     agents/openai.yaml
 ```
 
-The dashboard skill describes MCP workflows for account resources. Campaign scheduling and production sends remain dashboard-only.
+The dashboard skill describes MCP workflows for account resources. Campaign scheduling and production sends remain dashboard-only; MCP push delivery is limited to explicit one-device tests.
 
 ## Maintenance
 

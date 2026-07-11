@@ -16,6 +16,7 @@ Use this skill for the full push path: configure devices to receive notification
 | Add push to React Native Expo or bare RN | [push-react-native.md](references/push-react-native.md) and then [push-send.md](references/push-send.md) |
 | Add push to native Android or native iOS | [push-native.md](references/push-native.md) and then [push-send.md](references/push-send.md) |
 | Debug missing, delayed, or misrouted notifications | [troubleshooting.md](references/troubleshooting.md) |
+| Test a registered app through MCP or the public API | [mcp-testing.md](references/mcp-testing.md) and then [troubleshooting.md](references/troubleshooting.md) |
 
 ## Backend Send Quick Start
 
@@ -54,5 +55,5 @@ await client.push.notifications.send({
 3. Install the correct device SDK and initialize it once at app startup.
 4. Request notification permission from a user gesture.
 5. Link the signed-in user with `login(userId, email)` and set app-observed tags or events only after initialization.
-6. Send a test push from trusted backend code to a real registered device.
-7. Check SDK diagnostics before changing backend targeting logic.
+6. Send a one-device test from trusted backend code or MCP to a real registered device.
+7. Poll the test or notification trace and check SDK diagnostics before changing backend targeting logic.
