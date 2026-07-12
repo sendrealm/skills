@@ -1,6 +1,6 @@
 ---
 name: sendrealm-dashboard
-description: Use when creating or updating Sendrealm dashboard resources through the Sendrealm MCP server, including project context, domains, audiences, contacts, topics, templates, automations, email and push campaign drafts, push apps, device diagnostics, and single-device push tests. Always use this skill when an agent must manage Sendrealm dashboard resources rather than only integrate transactional delivery code.
+description: Use when working with Sendrealm dashboard resources through the Sendrealm MCP server, including project context, domains, audiences, contacts, topics, read-only template selection, automations, email and push campaign drafts, push apps, device diagnostics, and single-device push tests. Always use this skill when an agent must manage Sendrealm dashboard resources rather than only integrate transactional delivery code.
 ---
 
 # Sendrealm Dashboard
@@ -36,6 +36,7 @@ Live Activity testing follows the same boundary: start with one `device_id`, upd
 - Use only domains returned by the domain tools. A campaign sender requires a verified project domain.
 - Keep contact fields and event payloads to the minimum data needed for the task.
 - Read a resource before changing it when an existing ID is supplied.
+- Treat templates as read-only in API and MCP workflows. Template authoring, publishing, restoring, and archiving are supported only in the dashboard.
 - Do not use MCP for broad direct push sends or production campaign delivery. `push_test_send` is the only standard push delivery tool and must target one device chosen from the current project.
 - Never treat provider acceptance as proof that a notification was displayed. Inspect the test trace and device events.
 - Validate automation definitions before publish. For recovery flows, use a stable business correlation key such as `checkout_id` on both trigger and completion events.
@@ -49,7 +50,7 @@ Live Activity testing follows the same boundary: start with one `device_id`, upd
 - Create and inspect push apps, inspect redacted provider readiness and notification channels, and diagnose registered devices.
 - Create and edit push campaign drafts, preview reachable devices, run a one-device test, and inspect notification delivery traces.
 - Start, update, and end a one-device Live Activity test.
-- Create, inspect, and update audiences, audience properties, contacts, topics, templates, and automation drafts.
+- Create, inspect, and update audiences, audience properties, contacts, topics, and automation drafts; list and retrieve dashboard-authored templates and their versions.
 - Look up or upsert contacts by email, validate automations, inspect runs, and cancel or retry eligible live runs.
 - Create sandbox test runs, inject matching test events, and fast-forward waits with virtual time.
 - Attach or remove a contact from an audience, update topic subscriptions, and ingest correlated events.
